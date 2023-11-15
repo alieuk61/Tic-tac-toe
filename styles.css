@@ -1,0 +1,53 @@
+body{
+    max-height: 100vh;
+    max-width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+    background-color: white;
+
+}
+
+h1{
+    text-align: center;
+    color: darkgrey;
+    font-size: 3rem;
+    animation: fadeInAnimation ease 3s; /*we then add that in the animation property*/
+    animation-iteration-count: 1; /*the number of times we should play the animation before stopping*/
+    animation-fill-mode: forwards; /*the effect */
+    font-family: sans-serif;
+}
+@keyframes fadeInAnimation { /*basically created a function called fadeinanimation which at 0% it has an opacity of 0 and when at 100 % it has 100 opacity */
+    0% { /*the "function" basically allows you to specify what you want to change from and to, here we want it to start from 0 opacity and change to 100 opacity*/
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hidden{
+    display: hidden;
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    border: 2px solid white;
+}
+
+.grids{
+    border: 2px solid white;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clicked{
+    
+}
